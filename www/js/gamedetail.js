@@ -41,6 +41,14 @@ function parse_data_detail_game( game_id ){
 			if(i == 4) break;
 			i++;
 		}
+
+
+		var i = 0;
+		var tp = '<ul>';
+		for( var eachrowtrend in respData.recom_game ){
+
+		}
+		tp += '</ul>';
 		
 	}
 }

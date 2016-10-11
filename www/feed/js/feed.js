@@ -19,7 +19,33 @@ myApp.onPageInit('feed', function ( ) {
 	document.getElementById("redeem_link").href 	 	 = 'feed/redeem.html'; 
 	document.getElementById("chat_link").href 	 	 = 'chat/chat.html'; 
 	openPageFeed( );
-}); 
+});
+
+
+
+myApp.onPageInit('allgames', function ( ) {
+	var fruits = ('Apple Apricot Avocado Banana Melon Orange Peach Pear Pineapple').split(' ');
+	var autocompleteDropdownSimple = myApp.autocomplete({
+		input: '#autocomplete-dropdown',
+		openIn: 'dropdown',
+		source: function (autocomplete, query, render) {
+			var results = [];
+			if (query.length === 0) {
+				render(results);
+				return;
+			}
+			// Find matched items
+			for (var i = 0; i < fruits.length; i++) {
+				if (fruits[i].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(fruits[i]);
+			}
+			// Render items by passing array with result items
+			render(results);
+		}
+	});
+
+});
+
+
 
 
 function openAllGames( ){ 
@@ -30,12 +56,12 @@ function openAllGames( ){
 		if (xhr.readyState == 4 && xhr.status == 200) {
 			respData = JSON.parse(xhr.responseText); 
 
-
+/*
 			document.getElementById("userpic-allgames").src 	     = respData.userpic;
 			document.getElementById("username_label-allgames").innerHTML = respData.username;
 			document.getElementById("userpoint_label-allgames").innerHTML = respData.userpoint;
 
-
+*/
 			var i = 1; 
 			var button_ps = '';  
 			for( var eachrowcategory in respData.category ){  
@@ -94,15 +120,15 @@ function openPageFeed( ){
 	xhr.onreadystatechange = function() { 
 		if (xhr.readyState == 4 && xhr.status == 200) {
 			respData = JSON.parse(xhr.responseText);
-			
-			document.getElementById("userpic-feed").src 	 	 = respData.userpic;
-			document.getElementById("username_label-feed").innerHTML = respData.username;
-			document.getElementById("userpoint_label-feed").innerHTML = respData.userpoint;
+			 
+			document.getElementById("userpic-feedlist").src 	 	 = respData.userpic;
+			document.getElementById("username_label-feedlist").innerHTML = respData.sortname;
+			document.getElementById("userpoint_label-feedlist").innerHTML = respData.userpoint;
 
 			var i = 0; 
 			var contentfeed = ''; 
 			for( var eachrow in respData.feeds ){  
-				console.log(respData.feeds);
+				 
 				contentfeed += view_list_feed(respData.feeds[i].gusrimage, respData.feeds[i].usrname ,
 						 respData.feeds[i].logo ,respData.feeds[i].score ,respData.feeds[i].gamename
 						,respData.feeds[i].totcom,respData.feeds[i].update_date , respData.feeds[i].msg ,respData.feeds[i].rating ,respData.feeds[i].game_id 
