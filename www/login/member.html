@@ -1,0 +1,27 @@
+
+            <div data-page="login-screen-embedded" class="page">
+                <div class="page-content login-screen-content bg-dark-blue login-spade">
+                    <div class="login-screen-title"><img src="img/spade-logo.png"></div>
+
+                    <form>
+                        <div class="content-block">
+                            <div class="list-block-label member-header">Silahkan Masukkan No Ponsel Kamu<br />
+                                <div>
+                                <img src="" id="view_operator_logo"/>
+                                </div>
+                            </div>
+                            <div class="row member-input">
+                                <div class="col-20 color-white"><p>+62</p></div>
+                                <div class="col-80 item-input"> <input type="text" name="Phone Number" maxlength="12" placeholder="8xxxxxxxx" id="user_entry_phonenum" onkeypress="check_phone_operator(this.value)"/> </div>
+                            </div>
+                        </div>
+                        <div class="content-block">
+                            <a href="javascript:;" onclick="send_number_phone()" class="button button-big button-fill button-raised color-blue">SUBMIT</a>
+                        </div>
+                        <div class="content-block question">
+                            <div class="list-block-label">Mengapa saya harus menginput no ponsel? <a href="javascript:;" onclick="open_modal_info_alasan()" class="alert-why">Klik disini</a></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+	 

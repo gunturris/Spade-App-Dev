@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>SPADE Games Portal</title>
+
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="stylesheet" href="feed/css/loader.css">
+    <!-- Path to your custom fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay--> 
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p>Left panel content goes here</p>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+                  <div class="left"><img src="img/spade-logo.png" /></div>
+                  <div class=""></div>
+                  <div class="right">
+                    <div class="chip header-profile">
+                      <div class="chip-media"><img src="img/user3.jpg" id="userpic"></div>  
+		      <div class="chip-label header-profile-info"><span id="username_label">...</span> <span id="userpoint_label">...</span></div>
+                    </div>
+                  </div>
+                  <!-- Sub navbar -->
+
+          </div>
+          <div class="subnavbar top-menu">
+            <!-- Sub navbar content, for example tabs buttons -->
+            <div class="buttons-row color-gray">
+              <a href="feed/feed-list.html" class="button button-top-menu" id="feed_link" ><span class="top-menu-icon"><img src="img/icons/feeds.png" /></span>Feed</a>
+              <a href="feed/games.html" class="button button-top-menu" id="games_link" data-context-name="allgames"><span class="top-menu-icon"><img src="img/icons/games.png" /></span>Games</a>
+              <a href="feed/redeem.html" class="button button-top-menu" id="redeem_link"><span class="top-menu-icon"><img src="img/icons/redeem.png" /></span>Redeem</a>
+              <a href="chat/chat.html" class="button button-top-menu" id="chat_link"><span class="top-menu-icon"><img src="img/icons/chat-logo.png" /></span>Chat</a>
+            </div>
+          </div>
+
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            
+
+            <div class="page-content hide-bars-on-scroll bg-blue">
+              <div class="loader-container">
+                <div class="la-pacman">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+		
+              <div class="content-ads martop-99">
+                <img src="img/ads/ads1.gif" />
+              </div>
+
+
+
+		
+
+
+
+
+              
+              
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <!--<div class="toolbar">
+          <div class="toolbar-inner"><a href="#" class="link">Link 1</a><a href="#" class="link">Link 2</a></div>
+        </div>-->
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/__config.js"></script>
+    <script type="text/javascript" src="js/spade-app.js"></script>
+    <script type="text/javascript" src="feed/js/feed.js"></script> 
+    <script type="text/javascript" src="js/gamedetail.js"></script>
+  </body>
+</html>

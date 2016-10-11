@@ -1,0 +1,59 @@
+.bg-dark-blue{
+    background:#0d2442;
+}
+
+
+.user-profile{
+    color:#e3e3e3;
+    text-align: center;
+}
+
+.user-profile img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+.member-header{
+    color:#e3e3e3;
+}
+
+.member-input{
+
+}
+
+.member-input p{
+    margin:0px;
+    font-size:2em;
+    text-align: center;
+}
+
+.member-input input{
+    width: 90%;
+    font-size: 2em;
+    background: #0d2442;
+    border: none;
+    border-bottom: 1px solid #2196f3;
+    color:#ffe400;
+}
+
+.question{
+    font-size: 0.9em;
+    color:#e3e3e3;
+}
+
+.paket-container{
+    max-width:480px;
+    width:90%;
+    margin: 0 auto;
+    background:#fffce5;
+}
+
+.operator-logo{
+    width:100%;
+    text-align: center;
+}
+
+.buy-price{
+
+}

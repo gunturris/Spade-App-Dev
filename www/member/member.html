@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>SPADE Games Portal</title>
+	
+  <script type="text/javascript" src="js/__config.js"></script>
+   
+  <!-- Path to Framework7 Library CSS-->
+  <link rel="stylesheet" href="../css/framework7.material.min.css">
+  <link rel="stylesheet" href="../css/framework7.material.colors.min.css">
+  <!-- Path to your custom app styles-->
+  <link rel="stylesheet" href="css/member.css">
+  <!-- Path to your custom fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+ 
+</head>  <body>
+<!-- Status bar overlay for fullscreen mode-->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<!-- Left panel with reveal effect-->
+<div class="panel panel-left panel-reveal">
+  <div class="content-block">
+    <p>Left panel content goes here</p>
+  </div>
+</div>
+<!-- Right panel with cover effect-->
+<div class="panel panel-right panel-cover">
+  <div class="content-block">
+    <p>Right panel content goes here</p>
+  </div>
+</div>
+<!-- Views-->
+<div class="views">
+  <!-- Your main view, should have "view-main" class-->
+  <div class="view view-main">
+    <!-- Top Navbar-->
+
+    <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+    <div class="pages navbar-through toolbar-through">
+      <!-- Page, data-page contains page name-->
+      <div data-page="login-screen-embedded" class="page">
+        <div class="page-content login-screen-content bg-dark-blue login-spade">
+          <div class="login-screen-title"><img src="../img/spade-logo.png"></div>
+
+          <form>
+            <div class="content-block">
+              <div class="list-block-label member-header">Silahkan Masukkan No Ponsel Kamu</div>
+              <div class="row member-input">
+                <div class="col-20 color-white"><p>+62</p></div>
+                <div class="col-80 item-input">
+                  <input type="text" name="Phone Number" maxlength="12" placeholder="8xxxxxxxx"/> </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <a href="buy.html" class="alert-nohp  button button-big button-fill button-raised color-blue">SUBMIT</a>
+            </div>
+
+            <div class="content-block question">
+              <div class="list-block-label">Mengapa saya harus menginput no ponsel? <a href="#" class="alert-why">Klik disini</a></div>
+
+
+
+            </div>
+
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="popover popover-about">
+  <div class="popover-angle"></div>
+  <div class="popover-inner">
+    <div class="content-block">
+      <p>No ponsel anda sebagai </p>
+      <p>Kami tidak akan menjual data no ponsel anda ke pihak luar Spade.</p>
+      <p>Tutup</p>
+    </div>
+  </div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="../js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="../js/spade-app.js"></script>
+  <script type="text/javascript" src="js/member.js"></script>
+</body>
+</html>

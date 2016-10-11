@@ -1,0 +1,190 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <!-- We have home navbar without left link-->
+    <div class="left"></div>
+    <div class="center"><img src="img/spade-logo.png" /></div>
+    <div class="right">
+      <div class="chip header-profile">
+        <div class="chip-media"><img src="img/user3.jpg"></div>
+        <div class="chip-label header-profile-info">Jane Doe <span>16000</span></div>
+      </div>
+    </div>
+    <!-- Sub navbar -->
+
+  </div>
+  <div class="subnavbar top-menu">
+    <!-- Sub navbar content, for example tabs buttons -->
+    <div class="buttons-row color-gray">
+      <a href="feed.html" class="button button-top-menu"><span class="top-menu-icon"><img src="img/icons/feeds.png" /></span>Feed</a>
+      <a href="games.html" class="button button-top-menu"><span class="top-menu-icon"><img src="img/icons/games.png" /></span>Games</a>
+      <a href="redeem.html" class="button button-top-menu"><span class="top-menu-icon"><img src="img/icons/redeem.png" /></span>Redeem</a>
+      <a href="a.html" class="button button-top-menu"><span class="top-menu-icon"><img src="img/icons/chat-logo.png" /></span>Chat</a>
+    </div>
+  </div>
+
+</div>
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="allgames" class="page">
+    <!-- Scrollable page content-->
+    <div class="page-content bg-blue">
+      <div class="content-ads martop-99">
+        <img src="img/ads/ads1.gif" />
+      </div>
+      <div class="header-category">
+        <span class="category-icon"><img class="hithere" src="img/icons/svg/ghost.svg"></span>
+        <span class="category-title">CATEGORY GAMES</span>
+      </div>
+
+      <div data-pagination=".swiper-pagination2" data-paginationHide="false" class="swiper-container swiper-aa2 bg-pattern2">
+        <div class="swiper-pagination"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide category-thumb"><img class="cat-icon" src="img/icons/svg/ball.svg"> Arcade</div>
+            <div class="swiper-slide category-thumb"><img class="cat-icon" src="img/icons/svg/ball.svg"> Arcade</div>
+            <div class="swiper-slide category-thumb"><img class="cat-icon" src="img/icons/svg/ball.svg"> Arcade</div>
+            <div class="swiper-slide category-thumb"><img class="cat-icon" src="img/icons/svg/ball.svg"> Arcade</div>
+            <div class="swiper-slide category-thumb"><img class="cat-icon" src="img/icons/svg/ball.svg"> Arcade</div>
+            <div class="swiper-slide category-thumb"><img class="cat-icon" src="img/icons/svg/ball.svg"> Arcade</div>
+            <div class="swiper-slide category-thumb"><img class="cat-icon" src="img/icons/svg/ball.svg"> Arcade</div>
+          </div>
+
+
+      </div>
+
+
+      <div class="header-category">
+        <span class="category-icon"><img class="hithere" src="img/icons/svg/ghost.svg"></span>
+        <span class="category-title">CATEGORY GAMES</span>
+      </div>
+
+      <div data-pagination=".swiper-pagination2" data-paginationHide="false" class="swiper-container swiper-aa2 bg-pattern2">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper" id="category_button_div">
+
+        </div>
+
+      </div>
+
+      <div class="header-category">
+        <span class="category-icon"><img class="bounce" src="img/icons/svg/mushroom.svg"></span>
+        <span class="category-title">RECENT GAMES</span>
+      </div>
+      <div class="content-block martop-0 marbot-0 nopadding">
+
+        <div class="container-slider bg-pattern2">
+          <div data-pagination=".swiper-pagination3" data-paginationHide="true" class="swiper-container swiper-list-games">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+
+ 
+             <div class="swiper-slide"  data-context-name="languages.favorit.{{@index}}">
+                <div class="games-thumb">
+                  <img src="http://spade.co.id/games/logo_z/ikhtiar.jpg">
+                  <a href="#" class="button-play-thumb">VIEX GAME</a>
+
+                  <div class="clear"></div>
+                </div>
+              </div>
+  		{{#each this.favorite}}
+              <div class="swiper-slide"  data-context-name="languages.favorit.{{@index}}">
+                <div class="games-thumb">
+                  <img src="http://spade.co.id/games/logo_z/ikhtiar.jpg">
+                  <a href="#" class="button-play-thumb">VIE0 GAME</a>
+
+                  <div class="clear"></div>
+                </div>
+              </div>
+		{{/each}}
+
+ 
+
+ 
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+ 
+
+      <div class="header-category">
+        <span class="category-icon"><img class="hithere" src="img/icons/svg/game-controller3.svg"></span>
+        <span class="category-title">TRENDING GAMES</span>
+      </div>
+      <div class="content-block martop-0 marbot-0 nopadding">
+
+        <div class="container-slider bg-pattern2">
+          <div data-pagination=".swiper-pagination3" data-paginationHide="true" class="swiper-container swiper-list-games">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper" id="trending_games_div">
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+      <div class="header-category">
+        <span class="category-icon"><img class="bounce" src="img/icons/svg/ball.svg"></span>
+        <span class="category-title">GAMES</span>
+      </div>
+      <div class="content-block bg-pattern2 martop-0 marbot-0 nopadding">
+        <div class="main-cat-games">
+        <div class="row" id="random_games_div">
+
+
+        </div>
+        </div>
+
+      </div>
+
+      <div class="content-block bg-dark-blue marbot-0 padtop-15">
+        <div class="footer-menu">
+          <button type="button" class="btn btn-primary" onclick="ocaboutus()">About Us</button>
+          <button type="button" class="btn btn-primary" onclick="ochowto()">HOW TO PLAY</button>
+
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+</div>
+
+<script id="templateGames" type="text/template7">
+	{{#each this.favorite}}
+     <div class="swiper-slide"  data-context-name="languages.favorit.{{@index}}">
+        <div class="games-thumb">
+          <img src="http://spade.co.id/games/logo_z/ikhtiar.jpg">
+          <a href="#" class="button-play-thumb">VIE0 GAME</a>
+
+          <div class="clear"></div>
+        </div>
+      </div>
+	{{/each}}
+</script>

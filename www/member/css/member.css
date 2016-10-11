@@ -1,0 +1,35 @@
+.bg-dark-blue{
+    background:#0d2442;
+}
+
+.member-header{
+    color:#e3e3e3;
+}
+
+.member-input{
+
+}
+
+.member-input p{
+margin:0px;
+    font-size:2em;
+    text-align: center;
+}
+
+.member-input input{
+    width: 90%;
+    font-size: 2em;
+    background: #0d2442;
+    border: none;
+    border-bottom: 1px solid #2196f3;
+    color:#ffe400;
+}
+
+.question{
+font-size: 0.9em;
+    color:#e3e3e3;
+}
+
+.popover {
+    ;
+}
