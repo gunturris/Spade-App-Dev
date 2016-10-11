@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.spadefb.app" version="1.0.0" versionCode="10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Spade games</name>
+    <description>
+      Aplikasi untuk memainkan koleksi games HTML5 Keren.
+    </description>
+    <author email="it@krakataumedika.com" href="krakataumedika.com">
+      Spade Inc
+    </author>
+    <content src="index.html" />
+    <platform name="android">
+        <icon density="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
+        <icon density="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
+        <icon density="hdpi" src="www/res/icon/android/icon-72-hdpi.png" />
+        <icon density="xhdpi" src="www/res/icon/android/icon-96-xhdpi.png" />
+        <icon density="xxhdpi" src="www/res/icon/android/icon-96-xhdpi.png" />
+        <icon density="xxxhdpi" src="www/res/icon/android/icon-96-xhdpi.png" />
+        <splash density="land-ldpi" src="www/res/screen/android/screen-ldpi-landscape.png" />
+        <splash density="land-mdpi" src="www/res/screen/android/screen-mdpi-landscape.png" />
+        <splash density="land-hdpi" src="www/res/screen/android/screen-hdpi-landscape.png" />
+        <splash density="land-xhdpi" src="www/res/screen/android/screen-xhdpi-landscape.png" />
+        <splash density="land-xxhdpi" src="www/res/screen/android/screen-xhdpi-landscape.png" />
+        <splash density="land-xxxhdpi" src="www/res/screen/android/screen-xhdpi-landscape.png" />
+        <splash density="port-ldpi" src="www/res/screen/android/screen-ldpi-portrait.png" />
+        <splash density="port-mdpi" src="www/res/screen/android/screen-mdpi-portrait.png" />
+        <splash density="port-hdpi" src="www/res/screen/android/screen-hdpi-portrait.png" />
+        <splash density="port-xhdpi" src="www/res/screen/android/screen-xhdpi-portrait.png" />
+    </platform>
+    <access origin="*" /> 
+    <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="1.1.0" />
+    <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <access origin="*" />
+    <access origin="*://*.generasimudacorp.com/*" subdomains="true" />
+    <access origin="*://*.googleapis.com/*" subdomains="true" />
+    <access origin="*://*.gstatic.com/*" subdomains="true" />
+    <access origin="*://*.google.com/*" subdomains="true" />
+    <access origin="*://*.googleusercontent.com/*" subdomains="true" />
+    <engine name="android" spec="~5.1.1" />
+</widget>

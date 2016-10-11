@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "Cordova-Plugin-FCMNotification": {
+            "PACKAGE_NAME": "com.spadefb.app"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.spadefb.app"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.spadefb.app"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.spadefb.app"
+        }
+    },
+    "dependent_plugins": {}
+}
